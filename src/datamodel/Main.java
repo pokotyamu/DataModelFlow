@@ -17,12 +17,11 @@ public class Main {
    public static void main(String[] args) {
        System.out.println("==DataModelFlow==");
        
+       //入力は、User名とDataModule名であるProductivity
+       
        ArrayList<User> users = new ArrayList();
        users.add(new User(args[0]));
-       users.add(new User(args[1]));
-       
-       
-       DataModule dm = new ProdcutivityModule();
+       DataModule dm = DataModuleFactory.create(args[1]);
        ArrayList<String> dataList = dm.dataFunction(users);
        
        
