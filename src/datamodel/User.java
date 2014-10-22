@@ -21,4 +21,8 @@ class User {
         return this.name;
     }
 
+    public String getData() {
+        return "入力データ１";
+    }
+
 }

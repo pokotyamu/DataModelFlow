@@ -6,8 +6,6 @@
 
 package datamodel;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author pokotyamu
@@ -18,7 +16,7 @@ public class DataModuleFactory {
         DataModule dm = null;
         
         switch(dmname){
-            case "ProductivityModule" :
+            case "Productivity" :
                 dm = new ProductivityModule();
         }
         

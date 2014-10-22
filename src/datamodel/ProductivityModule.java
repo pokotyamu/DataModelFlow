@@ -17,7 +17,10 @@ public class ProductivityModule extends DataModule{
     @Override
     ArrayList<String> dataFunction(ArrayList<User> users) {
         ArrayList<String> returndata = new ArrayList();
-        
+        for (User user: users) {
+            returndata.add(user.getData());
+        }
+
         return returndata;
     }
     
