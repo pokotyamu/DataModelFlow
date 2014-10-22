@@ -12,17 +12,28 @@ package datamodel;
  */
 class User {
     private final String name;
-
+    
+    private String data1;
+    private String data2;
+    
+    
     User(String name) {
         this.name = name;
+        this.data1 = "入力データ１";
+        this.data2 = "入力データ２";
     }
 
     public String getName(){
         return this.name;
     }
 
-    public String getData() {
-        return "入力データ１";
+    public String getData1() {
+        return this.data1;
     }
 
+    public String getData2(){
+        return this.data2;
+    }
+    
+    
 }
