@@ -6,19 +6,14 @@
 
 package datamodel;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author pokotyamu
  */
-public class ProdcutivityModule extends DataModule{
+public class Division {
 
-    @Override
-    ArrayList<String> dataFunction(ArrayList<User> users) {
-        ArrayList<String> returndata = new ArrayList();
-        
-        return returndata;
+    public static String ans(User user) {
+        return user.getData1() + " / "+ user.getData2();
     }
     
 }

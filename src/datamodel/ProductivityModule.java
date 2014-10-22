@@ -18,7 +18,7 @@ public class ProductivityModule extends DataModule{
     ArrayList<String> dataFunction(ArrayList<User> users) {
         ArrayList<String> returndata = new ArrayList();
         for (User user: users) {
-            returndata.add(user.getData());
+            returndata.add(Division.ans(user));
         }
 
         return returndata;
